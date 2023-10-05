@@ -2,7 +2,7 @@
 
 An open-source Khmer Word to Speech Model. Just single word not sentence!
 
-<a target="_blank" href="https://colab.research.google.com/github/https://colab.research.google.com/drive/1Dao9iXxaEVrGTzoUVQL63UbKDK3G55ts?usp=sharing">
+<a target="_blank" href="https://colab.research.google.com/drive/1Dao9iXxaEVrGTzoUVQL63UbKDK3G55ts?usp=sharing">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
