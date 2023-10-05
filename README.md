@@ -36,6 +36,11 @@ This will output a file called `audio.wav` in the current directory. Output audi
 python app.py
 ```
 
+### Dataset
+
+This model was trained on kheng.info dataset. You can find it on http://kheng.info or at https://hf.co/datasets/seanghay/khmer_kheng_info_speech
+
 ## Reference
 
 - [VITS: Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech](https://github.com/jaywalnut310/vits)
+- [kheng.info](https://kheng.info/about/) is an online audio dictionary for the Khmer language with over 3000 recordings. Kheng.info is backed by multiple dictionaries and a large text corpus, and supports search in English and Khmer with search results ordered by word frequency.
