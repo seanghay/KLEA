@@ -20,7 +20,7 @@ pip install -r requirements.txt
 wget https://huggingface.co/spaces/seanghay/KLEA/resolve/main/G_35000.pth
 ```
 
-Please the checkpoint in the current directory.
+Place the checkpoint in the current directory.
 
 ### 3. Inference
 
