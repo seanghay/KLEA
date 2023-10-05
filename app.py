@@ -46,7 +46,7 @@ net_g = SynthesizerTrn(
 )
 
 _ = net_g.eval()
-_ = utils.load_checkpoint("G_35000.pth", net_g, None)
+_ = utils.load_checkpoint("G_60000.pth", net_g, None)
 
 def generate_voice(text):
     text = khmernormalizer.normalize(text)
