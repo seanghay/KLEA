@@ -14,10 +14,10 @@ pip install -r requirements.txt
 
 ### 2. Download Checkpoint
 
-[G_35000.pth](https://huggingface.co/spaces/seanghay/KLEA/resolve/main/G_35000.pth)
+[G_60000.pth](https://huggingface.co/spaces/seanghay/KLEA/resolve/main/G_60000.pth)
 
 ```shell
-wget https://huggingface.co/spaces/seanghay/KLEA/resolve/main/G_35000.pth
+wget https://huggingface.co/spaces/seanghay/KLEA/resolve/main/G_60000.pth
 ```
 
 Place the checkpoint in the current directory.
