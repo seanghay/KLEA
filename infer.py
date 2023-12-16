@@ -13,6 +13,7 @@ _letters_ipa = 'acefhijklmnoprstuwzĕŋŏŭɑɓɔɗəɛɡɨɲʋʔʰː'
 # Export all symbols:
 symbols = [_pad] + list(_punctuation) + list(_letters_ipa)
 
+
 # Special symbol ids
 SPACE_ID = symbols.index(" ")
 
@@ -28,7 +29,6 @@ def text_to_sequence(text):
 
 def get_text(text, hps):
     text_norm = text_to_sequence(text)
-
     if hps.data.add_blank:
         text_norm = commons.intersperse(text_norm, 0)
     text_norm = torch.LongTensor(text_norm)

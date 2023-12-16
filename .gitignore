@@ -188,3 +188,4 @@ cython_debug/
 #.idea/
 *.wav
 *.pth
+*.onnx
