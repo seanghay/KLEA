@@ -12,5 +12,3 @@ build:
     - gradio
     - khmernormalizer
     - monotonic-align
-  run:
-    - curl -L https://huggingface.co/spaces/seanghay/KLEA/resolve/main/G_60000.pth -o G_60000.pth
