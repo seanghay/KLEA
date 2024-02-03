@@ -1,0 +1,21 @@
+name: Build Cog
+
+on:
+  workflow_dispatch:
+  push: 
+    branches: 
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Setup Cog
+        uses: replicate/setup-cog@v1
+
+      - name: Build
+        run: |
+          cog build

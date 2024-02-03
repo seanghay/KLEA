@@ -1,0 +1,16 @@
+build:
+  gpu: true
+  system_packages:
+    - libsndfile1
+    - ffmpeg
+  python_packages:
+    - numpy==1.25.2
+    - librosa
+    - scipy
+    - torch==2.1.1
+    - Unidecode
+    - gradio
+    - khmernormalizer
+    - monotonic-align
+  run:
+    - curl -L https://huggingface.co/spaces/seanghay/KLEA/resolve/main/G_60000.pth -o G_60000.pth
