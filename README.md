@@ -16,20 +16,6 @@ uv run --with 'klea @ git+https://github.com/djsamseng/KLEA' python -c 'import k
 ffplay ទឹកធ្លាក់.wav
 ```
 
-
-### Gradio
-
-```
-python app.py
-```
-
-
-### Colab
-
-<img width="837" alt="image" src="https://github.com/seanghay/KLEA/assets/15277233/ac0da746-2a6c-439f-85da-a70e35efb85f">
-
-
-
 ### Dataset
 
 This model was trained on kheng.info dataset. You can find it on http://kheng.info or at https://hf.co/datasets/seanghay/khmer_kheng_info_speech
