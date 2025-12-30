@@ -1,9 +1,0 @@
-numpy==1.25.2
-librosa
-scipy
-torch
-torchvision
-Unidecode
-gradio
-khmernormalizer
-monotonic-align
