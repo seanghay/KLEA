@@ -3,7 +3,7 @@ Khmer Phonemizer - A Free, Standalone and Open-Source Khmer Grapheme-to-Phonemes
 """
 import os
 import csv
-from g2p import PhonetisaurusGraph
+from klea.g2p import PhonetisaurusGraph
 
 def _read_lexicon_file(file):
     lexicon = {}

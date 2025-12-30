@@ -1,10 +1,12 @@
-from models import SynthesizerTrn
+from klea.models import SynthesizerTrn
 from scipy.io.wavfile import write
-from khmer_phonemizer import phonemize_single
-import utils
-import commons
+from klea.khmer_phonemizer import phonemize_single
+from klea import utils
+from klea import commons
 import torch
 import sys
+from importlib.resources import files
+from pathlib import Path
 
 _pad        = '_'
 _punctuation = '. '
@@ -35,7 +37,8 @@ def get_text(text, hps):
     return text_norm
 
 def run_for_word(word, filename):
-	hps = utils.get_hparams_from_file("config.json")
+	resource_path: Path = files('klea').joinpath('config.json')
+	hps = utils.get_hparams_from_file(resource_path)
 	net_g = SynthesizerTrn(
 		len(symbols),
 		hps.data.filter_length // 2 + 1,

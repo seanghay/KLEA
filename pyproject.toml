@@ -6,8 +6,18 @@ readme = "README.md"
 authors = [
     { name = "Samuel Seng", email = "djsamseng@gmail.com" }
 ]
-requires-python = ">=3.12"
-dependencies = []
+requires-python = ">=3.9,<3.12"
+dependencies = [
+    "gradio>=4.44.1",
+    "khmernormalizer>=0.0.4",
+    "librosa>=0.11.0",
+    "monotonic-align>=1.0.0",
+    "numpy==1.25.2",
+    "scipy>=1.13.1",
+    "torch>=2.8.0",
+    "torchvision>=0.23.0",
+    "unidecode>=1.4.0",
+]
 
 [build-system]
 requires = ["uv_build>=0.9.9,<0.10.0"]
