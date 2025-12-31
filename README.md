@@ -6,14 +6,24 @@ An open-source Khmer Word to Speech Model. Just single word not sentence!
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-## Using as a Python Package
+## Running With [UV](https://docs.astral.sh/uv/) (Recommended)
 
 ```bash
 sudo apt-get install libsndfile1 python3-dev
 wget https://huggingface.co/spaces/seanghay/KLEA/resolve/main/G_60000.pth
-# G_60000.pth must be in the same folder where you `uv run` 
-uv run --with 'klea @ git+https://github.com/djsamseng/KLEA' python -c 'import klea; klea.run_for_word("ទឹកធ្លាក់", "ទឹកធ្លាក់.wav")'
+# G_60000.pth must be in the same folder where you `uv run`
+uv run --python 3.11 --with 'klea @ git+https://github.com/seanghay/KLEA' python -c 'import klea; klea.run_for_word("ទឹកធ្លាក់", "ទឹកធ្លាក់.wav")'
 ffplay ទឹកធ្លាក់.wav
+```
+
+## Installing with pip (alternative)
+- Requires python >= 3.9 and python < 3.12 due to numpy and monotonic-align dependencies
+```bash
+sudo apt-get install libsndfile1 python3-dev
+wget https://huggingface.co/spaces/seanghay/KLEA/resolve/main/G_60000.pth
+pip3 install git+https://github.com/seanghay/KLEA
+# G_60000.pth must be in the same folder where you run `python3`
+python3 -c 'import klea; klea.run_for_word("ទឹកធ្លាក់", "ទឹកធ្លាក់.wav")'
 ```
 
 ### Dataset

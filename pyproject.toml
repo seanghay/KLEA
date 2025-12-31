@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "An open-source Khmer Word to Speech Model"
 readme = "README.md"
 authors = [
-    { name = "Samuel Seng", email = "djsamseng@gmail.com" }
+    { name = "Seanghay Yath", email = "seanghay.dev@gmail.com" }
 ]
 requires-python = ">=3.9,<3.12"
 dependencies = [
